@@ -1,0 +1,127 @@
+```html id="6xmy2s"
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #4f46e5, #9333ea);
+        }
+
+        .login{
+            background: white;
+            padding: 40px;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .login h2{
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .input-box{
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-box label{
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-box input{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .input-box input:focus{
+            border-color: #4f46e5;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #4f46e5;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #3730a3;
+        }
+
+        .extra{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .extra a{
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="login">
+
+        <h2>Iniciar Sesión</h2>
+
+        <form>
+
+            <div class="input-box">
+                <label>Correo</label>
+                <input type="email" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="input-box">
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingresa tu contraseña">
+            </div>
+
+            <button type="submit">
+                Entrar
+            </button>
+
+        </form>
+
+        <div class="extra">
+            <p>
+                ¿No tienes cuenta?
+                <a href="#">Registrarse</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
