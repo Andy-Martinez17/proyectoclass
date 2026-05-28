@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Producto</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contenedor{
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label{
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Agregar Producto</h2>
+
+        <form>
+
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" id="nombre" placeholder="Ingrese el nombre">
+
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" placeholder="Ingrese el precio">
+
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" placeholder="Ingrese la cantidad">
+
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+                <option>Electrónica</option>
+                <option>Ropa</option>
+                <option>Hogar</option>
+                <option>Otros</option>
+            </select>
+
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" rows="4" placeholder="Descripción del producto"></textarea>
+
+            <button type="submit">Guardar Producto</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
