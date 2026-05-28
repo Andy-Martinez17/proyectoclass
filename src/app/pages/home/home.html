@@ -1,110 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME</title>
-  <h1> commit chamges</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Moderno</title>
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body{
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
 </head>
+
 <body class="bg-gray-100">
 
-  <!-- Sidebar -->
   <div class="flex min-h-screen">
 
-    <aside class="w-64 bg-gray-900 text-white p-5">
-      <h1 class="text-2xl font-bold mb-8">HOME</h1>
+    <!-- Sidebar -->
+    <aside class="w-72 bg-gradient-to-b from-indigo-900 to-purple-800 text-white p-6 shadow-2xl">
+
+      <h1 class="text-3xl font-bold mb-10">
+        Dashboard
+      </h1>
 
       <nav>
-        <ul class="space-y-4">
+        <ul class="space-y-5">
+
           <li>
-            <a href="#" class="block hover:text-gray-300">
-              Init
+            <a href="#"
+               class="flex items-center gap-3 bg-white/10 hover:bg-white/20 transition p-3 rounded-xl">
+              Inicio
             </a>
           </li>
 
           <li>
-            <a href="#" class="block hover:text-gray-300">
-              Users
+            <a href="#"
+               class="flex items-center gap-3 hover:bg-white/10 transition p-3 rounded-xl">
+              👥 Usuarios
             </a>
           </li>
 
           <li>
-            <a href="#" class="block hover:text-gray-300">
-              Config
+            <a href="#"
+               class="flex items-center gap-3 hover:bg-white/10 transition p-3 rounded-xl">
+              ⚙️ Configuración
             </a>
           </li>
 
           <li>
-            <a href="#" class="block hover:text-gray-300">
-              Cerrar sesión
+            <a href="#"
+               class="flex items-center gap-3 hover:bg-red-500 transition p-3 rounded-xl">
+               Cerrar sesión
             </a>
           </li>
+
         </ul>
       </nav>
+
     </aside>
 
     <!-- Contenido -->
     <main class="flex-1 p-8">
 
-      <h2 class="text-3xl font-bold mb-6">
-        Bienvenido mai
-      </h2>
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-10">
+
+        <div>
+          <h2 class="text-4xl font-bold text-gray-800">
+            Bienvenido
+          </h2>
+
+          <p class="text-gray-500 mt-2">
+            Panel administrativo moderno
+          </p>
+        </div>
+
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-3 rounded-xl shadow-lg transition">
+          + Nuevo
+        </button>
+
+      </div>
 
       <!-- Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
 
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="text-gray-500">Usuarios</h3>
-          <p class="text-3xl font-bold mt-2">120</p>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-gray-500">
+                Usuarios
+              </h3>
+
+              <p class="text-4xl font-bold mt-2 text-indigo-600">
+                120
+              </p>
+            </div>
+
+            <div class="text-5xl">
+              👥
+            </div>
+          </div>
+
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="text-gray-500">Ventas</h3>
-          <p class="text-3xl font-bold mt-2">35</p>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-gray-500">
+                Ventas
+              </h3>
+
+              <p class="text-4xl font-bold mt-2 text-green-500">
+                35
+              </p>
+            </div>
+
+            <div class="text-5xl">
+
+            </div>
+          </div>
+
         </div>
 
-        <div class="bg-white p-6 rounded-xl shadow">
-          <h3 class="text-gray-500">Msj</h3>
-          <p class="text-3xl font-bold mt-2">8</p>
+        <!-- Card -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:scale-105 transition">
+
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-gray-500">
+                Mensajes
+              </h3>
+
+              <p class="text-4xl font-bold mt-2 text-pink-500">
+                8
+              </p>
+            </div>
+
+            <div class="text-5xl">
+              ✉️
+            </div>
+          </div>
+
         </div>
 
       </div>
 
       <!-- Tabla -->
-      <div class="bg-white rounded-xl shadow p-6">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
 
-        <h3 class="text-xl font-bold mb-4">
-          Actividad
-        </h3>
+        <div class="flex justify-between items-center mb-6">
 
-        <table class="w-full border-collapse">
+          <h3 class="text-2xl font-bold text-gray-800">
+            Actividad reciente
+          </h3>
 
-          <thead>
-            <tr class="bg-gray-200">
-              <th class="p-3 text-left">Usuario</th>
-              <th class="p-3 text-left">Acción</th>
-              <th class="p-3 text-left">Fecha</th>
-            </tr>
-          </thead>
+          <input
+            type="text"
+            placeholder="Buscar..."
+            class="border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
 
-          <tbody>
-            <tr class="border-b">
-              <td class="p-3">Andy</td>
-              <td class="p-3">Inicio de sesión</td>
-              <td class="p-3">21/05/2028</td>
-            </tr>
+        </div>
 
-            <tr class="border-b">
-              <td class="p-3">Chapulin</td>
-              <td class="p-3">Registro</td>
-              <td class="p-3">21/05/2026</td>
-            </tr>
-          </tbody>
+        <div class="overflow-x-auto">
 
-        </table>
+          <table class="w-full">
+
+            <thead>
+
+              <tr class="bg-indigo-100 text-indigo-900">
+
+                <th class="p-4 text-left rounded-l-xl">
+                  Usuario
+                </th>
+
+                <th class="p-4 text-left">
+                  Acción
+                </th>
+
+                <th class="p-4 text-left rounded-r-xl">
+                  Fecha
+                </th>
+
+              </tr>
+
+            </thead>
+
+            <tbody class="text-gray-700">
+
+              <tr class="border-b hover:bg-gray-50 transition">
+
+                <td class="p-4">
+                  Andy
+                </td>
+
+                <td class="p-4">
+                  Inicio de sesión
+                </td>
+
+                <td class="p-4">
+                  21/05/2026
+                </td>
+
+              </tr>
+
+              <tr class="border-b hover:bg-gray-50 transition">
+
+                <td class="p-4">
+                  Chapulin
+                </td>
+
+                <td class="p-4">
+                  Registro
+                </td>
+
+                <td class="p-4">
+                  22/05/2026
+                </td>
+
+              </tr>
+
+              <tr class="hover:bg-gray-50 transition">
+
+                <td class="p-4">
+                  Maria
+                </td>
+
+                <td class="p-4">
+                  Actualizó perfil
+                </td>
+
+                <td class="p-4">
+                  23/05/2026
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
 
       </div>
 
